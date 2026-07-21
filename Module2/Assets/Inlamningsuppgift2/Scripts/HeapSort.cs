@@ -33,8 +33,51 @@ public class HeapSort : MonoBehaviour
 
     private void SortNumbersButton()
     {
+        // Jag valde att ändra så att även andra datatyper kan använda sorteringen.
+        // Har använt IComparable tidigare i klassiska webbapplikationer i .NET.
+        // Fastän Array.Sort() ju finns men den använder enligt källor på internet
+        // en kombination av HeapSort, Insertion sort och Quicksort baserat 
+        // på om jag förstått det rätt antal items till exempel.
+        // Generiska typer är bra eftersom de kan användas som mallar för att
+        // ha samma tex. metoder oavsett vilket specifik typ av entitet (tex. bil, lastbil, buss etc.)
+        // Så om du byter ut "private int[] numbers = new int[10];" mot en annan datatyp tex.
+        // en custom class tex. "Bil" så kan den också användas för sortering.
+        // Det enda kravet är då att man måste implementera IComparable interfacet/kontraktet i
+        // implementationen av den custom classen ("Bil") tex.
+        // tex.
+        // public class Bil : IComparable<Bil>
+        // {
+        //     public int CompareTo(Bil otherObject)
+        //     {
+        //         return SomeProperty.CompareTo(otherObject.SomeProperty);
+        //     }
+        // }
+        // Enligt dokumentation på https://learn.microsoft.com/en-us/dotnet/api/system.icomparable?view=netstandard-2.1
+
+        int[] newNumbers = new int[numbers.Length];
+        numbers.CopyTo(newNumbers, 0);
+
         MainSort();
         DisplayNumbers();
+
+        // Verifera om sorteringen gick rätt till....
+        
+        // Minsta talet först...?
+        if (sortType == SortType.MinHeapSort)
+        {
+            Array.Sort(newNumbers); // Sorterar A-Ö eller 1-10
+        } // Största talet först...?
+        else if (sortType == SortType.MaxHeapSort)
+        {
+            Array.Sort(newNumbers); // Sorterar A-Ö eller 1-10
+            Array.Reverse(newNumbers); // Sorterar 10-1 eller Z-A
+        }
+
+        // Samma ordning på talen ?
+        if (!newNumbers.SequenceEqual(numbers))
+        {
+            Debug.LogError("Sorting failed!"); // Inte samma ordning på talen!
+        }
     }
 
     private void DisplayNumbers()
@@ -53,25 +96,32 @@ public class HeapSort : MonoBehaviour
     {
         int numberOfElements = numbers.Count();
 
-        BuildHeap(ref numbers, numberOfElements);
+        BuildHeap(numbers, numberOfElements);
 
         for (int elementIndex = numberOfElements - 1; elementIndex >= 0; elementIndex--)
         {
             (numbers[0], numbers[elementIndex]) = (numbers[elementIndex], numbers[0]);
 
-            Heapify(numbers, elementIndex, 0);
+            Heapify<int>(numbers, elementIndex, 0);
         }
     }
 
-    private void BuildHeap(ref int[] numbersArray, int numberOfElements)
+    private void BuildHeap(int[] numbersArray, int numberOfElements)
     {
         for (int i = numberOfElements / 2 - 1; i >= 0; i--)
         {
-            Heapify(numbersArray, numberOfElements, i);
+            Heapify<int>(numbersArray, numberOfElements, i);
         }
     }
 
-    private void Heapify(int[] numbersArray, int heapSize, int rootIndex)
+    /// <summary>
+    /// Heapify generisk metod
+    /// </summary>
+    /// <param name="array">är en generisk array som implementerar IComparable interfacet</param>
+    /// <param name="heapSize"></param>
+    /// <param name="rootIndex"></param>
+    /// <typeparam name="T"></typeparam>
+    private void Heapify<T>(T[] array, int heapSize, int rootIndex) where T : IComparable
     {
         // Aktuell nod
         Node largestNode = Node.ConvertToNode(rootIndex);
@@ -82,28 +132,47 @@ public class HeapSort : MonoBehaviour
         // Höger nod
         Node rightNode = Node.ConvertToNode(2 * rootIndex + 2);
 
-        // Vänstra nod är högsta ?
-        if (leftNode.WithinIndexBounds(heapSize)
-            && numbersArray[leftNode.index].CompareAccordingToSortType(numbersArray[largestNode.index], sortType))
+        if (sortType == SortType.MinHeapSort)
         {
-            largestNode = leftNode;
-        }
+            // Vänstra nod ?
+            if (leftNode.WithinIndexBounds(heapSize)
+                && array[leftNode.index].CompareTo(array[largestNode.index]) > 0)
+            {
+                largestNode = leftNode;
+            }
 
-        // Högra nod är högsta ?
-        if (rightNode.WithinIndexBounds(heapSize)
-            && numbersArray[rightNode.index].CompareAccordingToSortType(numbersArray[largestNode.index], sortType))
+            // Högra nod ?
+            if (rightNode.WithinIndexBounds(heapSize)
+                && array[rightNode.index].CompareTo(array[largestNode.index]) > 0)
+            {
+                largestNode = rightNode;
+            }
+        }
+        else if (sortType == SortType.MaxHeapSort)
         {
-            largestNode = rightNode;
+            // Vänstra nod ?
+            if (leftNode.WithinIndexBounds(heapSize)
+                && array[leftNode.index].CompareTo(array[largestNode.index]) < 1)
+            {
+                largestNode = leftNode;
+            }
+
+            // Högra nod ?
+            if (rightNode.WithinIndexBounds(heapSize)
+                && array[rightNode.index].CompareTo(array[largestNode.index]) < 1)
+            {
+                largestNode = rightNode;
+            }
         }
 
         // om största noden inte är roten
         if (largestNode.index != rootIndex)
         {
-            (numbersArray[rootIndex], numbersArray[largestNode.index]) =
-                (numbersArray[largestNode.index], numbersArray[rootIndex]);
+            (array[rootIndex], array[largestNode.index]) =
+                (array[largestNode.index], array[rootIndex]);
 
             // Med rekursion arbeta vidare
-            Heapify(numbersArray, heapSize, largestNode.index);
+            Heapify<T>(array, heapSize, largestNode.index);
         }
     }
 
