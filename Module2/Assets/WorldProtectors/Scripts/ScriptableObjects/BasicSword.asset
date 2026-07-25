@@ -15,6 +15,7 @@ MonoBehaviour:
   title: Basic Sword
   sprite: {fileID: 21300000, guid: c3be05f5440ab3642967e47c0bea416f, type: 3}
   weaponType: 0
+  ammunitionType: 2
   description: Basic sword is for near combat
   strength: 10
   range: 1

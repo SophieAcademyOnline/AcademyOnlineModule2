@@ -31,6 +31,7 @@ public class PlayerUI : MonoBehaviour
     void Start()
     {
         weaponUiButton = GetComponent<Button>();
+        if(weaponUiButton==null) return;
         Image weaponImage = weaponUiButton.GetComponent<Image>();
         weaponImage.sprite = currentWeapon.sprite;
         weaponUiButton.onClick.AddListener(PopUpWeaponImageButton);
@@ -44,7 +45,6 @@ public class PlayerUI : MonoBehaviour
         if (toggleWeaponPopUp)
         {
             popUp = Instantiate(weaponPopUpImage,GameObject.Find("Canvas").transform).GetComponent<WeaponPopUPImageUI>();
-            //popUp.gameObject.transform.position = new Vector3(0, 373f, 0f);
         }
         else if(popUp!=null)
         {

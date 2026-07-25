@@ -11,9 +11,17 @@ public class Weapon : ScriptableObject
       Range = 1
    };
 
+   public enum AmmunitionType
+   {
+      None = 0,
+      Arrow = 1,
+      Color = 2
+   };
+
    public string title;
    public Sprite sprite;
    public WeaponType weaponType;
+   public AmmunitionType ammunitionType;
    public string description;
    public int strength;
    public int range;
