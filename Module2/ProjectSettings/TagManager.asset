@@ -8,11 +8,16 @@ TagManager:
   - Fruit
   - Obstacle
   - Arrow
+  - Bow
+  - Sword
+  - ArrowPocket
+  - ArrowConstraint
+  - 1stPersonCamera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - 
