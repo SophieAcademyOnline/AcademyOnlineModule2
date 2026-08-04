@@ -1,0 +1,2459 @@
+{
+    "Hero": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "D:/RL-Projects/AcademyOnline-Module2",
+        "Object": {
+            "Hero": {
+                "Generation": "ActorBuild",
+                "Physics": {
+                    "Collision Shapes": {
+                        "RL_BoneRoot": {},
+                        "CC_Base_Hip": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -5.454327583312988,
+                                    4.086014270782471,
+                                    105.01707458496094
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121436834335327,
+                                    0.07486672699451447,
+                                    -0.10692095011472702,
+                                    0.5686700344085693
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000004768371582,
+                                    1.0000005960464478
+                                ],
+                                "Radius": 8.692724227905273,
+                                "Capsule Length": 24.919769287109375
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    5.460350036621094,
+                                    4.086014270782471,
+                                    105.01707458496094
+                                ],
+                                "WorldRotationQ": [
+                                    0.8121436834335327,
+                                    -0.0748666301369667,
+                                    0.10692079365253448,
+                                    0.5686700344085693
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0000004768371582,
+                                    1.0000004768371582
+                                ],
+                                "Radius": 8.692724227905273,
+                                "Capsule Length": 24.919769287109375
+                            }
+                        },
+                        "CC_Base_Pelvis": {},
+                        "CC_Base_L_Thigh": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    9.377102851867676,
+                                    2.196486711502075,
+                                    73.9394760131836
+                                ],
+                                "WorldRotationQ": [
+                                    -0.028815068304538727,
+                                    0.7397531867027283,
+                                    -0.6714915037155151,
+                                    -0.03215666860342026
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.000000238418579,
+                                    0.9999998807907104
+                                ],
+                                "Radius": 7.471284866333008,
+                                "Capsule Length": 42.2823600769043
+                            }
+                        },
+                        "CC_Base_L_Calf": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    8.427164077758789,
+                                    4.959414005279541,
+                                    29.14459228515625
+                                ],
+                                "WorldRotationQ": [
+                                    -0.008382461033761501,
+                                    0.7130549550056458,
+                                    -0.701004147529602,
+                                    -0.008694234304130077
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907104,
+                                    0.9999999403953552,
+                                    1.0
+                                ],
+                                "Radius": 6.164675712585449,
+                                "Capsule Length": 35.07793426513672
+                            }
+                        },
+                        "CC_Base_L_Foot": {},
+                        "CC_Base_L_ToeBaseShareBone": {},
+                        "CC_Base_L_ToeBase": {},
+                        "CC_Base_L_PinkyToe1": {},
+                        "CC_Base_L_RingToe1": {},
+                        "CC_Base_L_MidToe1": {},
+                        "CC_Base_L_IndexToe1": {},
+                        "CC_Base_L_BigToe1": {},
+                        "CC_Base_L_CalfTwist01": {},
+                        "CC_Base_L_CalfTwist02": {},
+                        "CC_Base_L_KneeShareBone": {},
+                        "CC_Base_L_ThighTwist01": {},
+                        "CC_Base_L_ThighTwist02": {},
+                        "CC_Base_R_Thigh": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -9.384867668151855,
+                                    2.1935794353485107,
+                                    73.93541717529297
+                                ],
+                                "WorldRotationQ": [
+                                    0.028727611526846886,
+                                    0.7397156953811646,
+                                    -0.671541154384613,
+                                    0.03206121176481247
+                                ],
+                                "WorldScale": [
+                                    1.0000004768371582,
+                                    1.0000004768371582,
+                                    1.0
+                                ],
+                                "Radius": 7.438785552978516,
+                                "Capsule Length": 42.3420295715332
+                            }
+                        },
+                        "CC_Base_R_Calf": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -8.428787231445312,
+                                    5.048308372497559,
+                                    29.120229721069336
+                                ],
+                                "WorldRotationQ": [
+                                    0.00847303681075573,
+                                    0.7130334973335266,
+                                    -0.7010237574577332,
+                                    0.008780382573604584
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 6.154083251953125,
+                                "Capsule Length": 35.09911346435547
+                            }
+                        },
+                        "CC_Base_R_KneeShareBone": {},
+                        "CC_Base_R_Foot": {},
+                        "CC_Base_R_ToeBase": {},
+                        "CC_Base_R_BigToe1": {},
+                        "CC_Base_R_PinkyToe1": {},
+                        "CC_Base_R_RingToe1": {},
+                        "CC_Base_R_IndexToe1": {},
+                        "CC_Base_R_MidToe1": {},
+                        "CC_Base_R_ToeBaseShareBone": {},
+                        "CC_Base_R_CalfTwist01": {},
+                        "CC_Base_R_CalfTwist02": {},
+                        "CC_Base_R_ThighTwist01": {},
+                        "CC_Base_R_ThighTwist02": {},
+                        "CC_Base_Waist": {},
+                        "CC_Base_Spine01": {
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 2.0,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0023403936065733433,
+                                    3.012026786804199,
+                                    128.42832946777344
+                                ],
+                                "WorldRotationQ": [
+                                    0.44554921984672546,
+                                    0.5489898920059204,
+                                    0.44564497470855713,
+                                    0.5490870475769043
+                                ],
+                                "WorldScale": [
+                                    1.000000238418579,
+                                    0.9999999403953552,
+                                    1.0
+                                ],
+                                "Radius": 12.009819984436035,
+                                "Capsule Length": 5.229343414306641
+                            }
+                        },
+                        "CC_Base_Spine02": {},
+                        "CC_Base_NeckTwist01": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0013724631862714887,
+                                    5.998554706573486,
+                                    157.2426300048828
+                                ],
+                                "WorldRotationQ": [
+                                    0.7748422622680664,
+                                    0.0007886733510531485,
+                                    -0.0005973288207314909,
+                                    0.6321538686752319
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Radius": 5.261124610900879,
+                                "Capsule Length": 5.305230140686035
+                            },
+                            "Capsule(0)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Z",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.022126520052552223,
+                                    5.216616153717041,
+                                    143.57318115234375
+                                ],
+                                "WorldRotationQ": [
+                                    0.5483185648918152,
+                                    0.4475579559803009,
+                                    0.5474737882614136,
+                                    0.4464426338672638
+                                ],
+                                "WorldScale": [
+                                    0.9999998807907104,
+                                    0.9999999403953552,
+                                    0.9999998807907104
+                                ],
+                                "Radius": 10.932331085205078,
+                                "Capsule Length": 13.708892822265625
+                            },
+                            "Capsule(1)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -7.026182651519775,
+                                    0.6817337870597839,
+                                    141.10986328125
+                                ],
+                                "WorldRotationQ": [
+                                    0.3085610568523407,
+                                    0.6369863152503967,
+                                    0.30826520919799805,
+                                    0.6356186866760254
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999998807907104,
+                                    1.0
+                                ],
+                                "Radius": 7.259908676147461,
+                                "Capsule Length": 13.249431610107422
+                            },
+                            "Capsule(2)": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    6.973788738250732,
+                                    0.688271701335907,
+                                    141.08294677734375
+                                ],
+                                "WorldRotationQ": [
+                                    0.3085610568523407,
+                                    0.6369863152503967,
+                                    0.30826520919799805,
+                                    0.6356186866760254
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999998807907104,
+                                    1.0
+                                ],
+                                "Radius": 7.259908676147461,
+                                "Capsule Length": 13.249431610107422
+                            }
+                        },
+                        "CC_Base_NeckTwist02": {},
+                        "CC_Base_Head": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -0.019748365506529808,
+                                    3.065528154373169,
+                                    170.12376403808594
+                                ],
+                                "WorldRotationQ": [
+                                    0.7071057558059692,
+                                    0.0,
+                                    0.0,
+                                    0.7071077823638916
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.000000238418579,
+                                    1.0000001192092896
+                                ],
+                                "Radius": 7.414432048797607,
+                                "Capsule Length": 6.968157768249512
+                            }
+                        },
+                        "CC_Base_FacialBone": {},
+                        "CC_Base_JawRoot": {},
+                        "CC_Base_Tongue01": {},
+                        "CC_Base_Tongue02": {},
+                        "CC_Base_Tongue03": {},
+                        "CC_Base_Teeth02": {},
+                        "CC_Base_R_Eye": {},
+                        "CC_Base_L_Eye": {},
+                        "CC_Base_UpperJaw": {},
+                        "CC_Base_Teeth01": {},
+                        "CC_Base_L_Clavicle": {},
+                        "CC_Base_L_Upperarm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    28.654539108276367,
+                                    9.30521297454834,
+                                    148.03414916992188
+                                ],
+                                "WorldRotationQ": [
+                                    0.4938204884529114,
+                                    0.5118309855461121,
+                                    -0.49342286586761475,
+                                    0.500703752040863
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Radius": 5.045433521270752,
+                                "Capsule Length": 22.94369125366211
+                            }
+                        },
+                        "CC_Base_L_Forearm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    56.3853874206543,
+                                    9.329083442687988,
+                                    149.23605346679688
+                                ],
+                                "WorldRotationQ": [
+                                    0.5002379417419434,
+                                    0.502498209476471,
+                                    -0.491720974445343,
+                                    0.5054385662078857
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999999403953552,
+                                    1.0
+                                ],
+                                "Radius": 4.368340492248535,
+                                "Capsule Length": 21.781436920166016
+                            }
+                        },
+                        "CC_Base_L_ForearmTwist01": {},
+                        "CC_Base_L_ForearmTwist02": {},
+                        "CC_Base_L_ElbowShareBone": {},
+                        "CC_Base_L_Hand": {
+                            "Capsule": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    73.70012664794922,
+                                    8.476367950439453,
+                                    149.1569061279297
+                                ],
+                                "WorldRotationQ": [
+                                    0.49963894486427307,
+                                    0.5200144052505493,
+                                    -0.4860580265522003,
+                                    0.49365344643592834
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    0.9999997019767761,
+                                    0.9999997615814209
+                                ],
+                                "Extent": [
+                                    4.522918701171875,
+                                    9.572033882141113,
+                                    8.070655822753906
+                                ]
+                            }
+                        },
+                        "CC_Base_L_Pinky1": {},
+                        "CC_Base_L_Pinky2": {},
+                        "CC_Base_L_Pinky3": {},
+                        "CC_Base_L_Ring1": {},
+                        "CC_Base_L_Ring2": {},
+                        "CC_Base_L_Ring3": {},
+                        "CC_Base_L_Mid1": {},
+                        "CC_Base_L_Mid2": {},
+                        "CC_Base_L_Mid3": {},
+                        "CC_Base_L_Index1": {},
+                        "CC_Base_L_Index2": {},
+                        "CC_Base_L_Index3": {},
+                        "CC_Base_L_Thumb1": {},
+                        "CC_Base_L_Thumb2": {},
+                        "CC_Base_L_Thumb3": {},
+                        "CC_Base_L_UpperarmTwist01": {},
+                        "CC_Base_L_UpperarmTwist02": {},
+                        "CC_Base_L_RibsTwist": {},
+                        "CC_Base_L_Breast": {},
+                        "CC_Base_R_RibsTwist": {},
+                        "CC_Base_R_Breast": {},
+                        "CC_Base_R_Clavicle": {},
+                        "CC_Base_R_Upperarm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -28.66160011291504,
+                                    9.305878639221191,
+                                    148.00259399414062
+                                ],
+                                "WorldRotationQ": [
+                                    -0.49379628896713257,
+                                    0.5115777254104614,
+                                    -0.49452659487724304,
+                                    -0.49989694356918335
+                                ],
+                                "WorldScale": [
+                                    0.9999999403953552,
+                                    0.9999997615814209,
+                                    0.9999998211860657
+                                ],
+                                "Radius": 5.045193672180176,
+                                "Capsule Length": 22.957780838012695
+                            }
+                        },
+                        "CC_Base_R_Forearm": {
+                            "Capsule": {
+                                "Bone Active": true,
+                                "Bound Type": "Capsule",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -56.38827133178711,
+                                    9.312938690185547,
+                                    149.17535400390625
+                                ],
+                                "WorldRotationQ": [
+                                    0.4998932480812073,
+                                    -0.5030645728111267,
+                                    0.49121126532554626,
+                                    0.5057114958763123
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    0.9999998807907104,
+                                    1.0
+                                ],
+                                "Radius": 4.368199348449707,
+                                "Capsule Length": 21.766538619995117
+                            }
+                        },
+                        "CC_Base_R_ElbowShareBone": {},
+                        "CC_Base_R_ForearmTwist01": {},
+                        "CC_Base_R_ForearmTwist02": {},
+                        "CC_Base_R_Hand": {
+                            "Capsule": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    -73.7172622680664,
+                                    8.749899864196777,
+                                    149.0842742919922
+                                ],
+                                "WorldRotationQ": [
+                                    -0.49973025918006897,
+                                    0.5199331641197205,
+                                    -0.48596978187561035,
+                                    -0.49373331665992737
+                                ],
+                                "WorldScale": [
+                                    1.0000001192092896,
+                                    1.0,
+                                    0.9999999403953552
+                                ],
+                                "Extent": [
+                                    5.314807891845703,
+                                    9.573336601257324,
+                                    8.195571899414062
+                                ]
+                            }
+                        },
+                        "CC_Base_R_Ring1": {},
+                        "CC_Base_R_Ring2": {},
+                        "CC_Base_R_Ring3": {},
+                        "CC_Base_R_Mid1": {},
+                        "CC_Base_R_Mid2": {},
+                        "CC_Base_R_Mid3": {},
+                        "CC_Base_R_Thumb1": {},
+                        "CC_Base_R_Thumb2": {},
+                        "CC_Base_R_Thumb3": {},
+                        "CC_Base_R_Index1": {},
+                        "CC_Base_R_Index2": {},
+                        "CC_Base_R_Index3": {},
+                        "CC_Base_R_Pinky1": {},
+                        "CC_Base_R_Pinky2": {},
+                        "CC_Base_R_Pinky3": {},
+                        "CC_Base_R_UpperarmTwist01": {},
+                        "CC_Base_R_UpperarmTwist02": {},
+                        "CC_Game_Body": {},
+                        "CC_Game_Tongue": {},
+                        "Tank_Top": {},
+                        "Biker_Vest": {},
+                        "band": {
+                            "Box": {
+                                "Bone Active": false,
+                                "Bound Type": "Box",
+                                "Bound Axis": "Y",
+                                "Margin": 0.800000011920929,
+                                "Friction": 0.05000000074505806,
+                                "Elasticity": 0.5,
+                                "WorldTranslate": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "WorldRotationQ": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "WorldScale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "Extent": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ]
+                            }
+                        },
+                        "Utility_Joggers": {},
+                        "MaleB_S_T002": {},
+                        "Armor_Lower": {},
+                        "Armor_Arms": {},
+                        "CC_Base_Eye": {},
+                        "CC_Base_Teeth": {}
+                    }
+                },
+                "ExpressionSet": "4",
+                "Expression": {
+                    "V_None": {
+                        "Bones": {}
+                    },
+                    "V_Open": {
+                        "Bones": {
+                            "CC_Base_JawRoot": {
+                                "Translate": [
+                                    -1.1920928955078125e-07,
+                                    0.0,
+                                    -1.1734664440155029e-07
+                                ],
+                                "Rotation": [
+                                    -6.068330549169332e-08,
+                                    -2.552769728936255e-08,
+                                    0.13052627444267273,
+                                    0.9914449453353882
+                                ]
+                            }
+                        }
+                    },
+                    "V_Explosive": {
+                        "Bones": {}
+                    },
+                    "V_Dental_Lip": {
+                        "Bones": {}
+                    },
+                    "V_Tight_O": {
+                        "Bones": {}
+                    },
+                    "V_Tight": {
+                        "Bones": {}
+                    },
+                    "V_Wide": {
+                        "Bones": {}
+                    },
+                    "V_Affricate": {
+                        "Bones": {}
+                    },
+                    "V_Lip_Open": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_up": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Raise": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Out": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Narrow": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Lower": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Curl_U": {
+                        "Bones": {}
+                    },
+                    "V_Tongue_Curl_D": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Inner_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Inner_R": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Outer_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Raise_Outer_R": {
+                        "Bones": {}
+                    },
+                    "Brow_Drop_L": {
+                        "Bones": {}
+                    },
+                    "Brow_Drop_R": {
+                        "Bones": {}
+                    },
+                    "Nose_Sneer_L": {
+                        "Bones": {}
+                    },
+                    "Nose_Sneer_R": {
+                        "Bones": {}
+                    },
+                    "Cheek_Raise_L": {
+                        "Bones": {}
+                    },
+                    "Cheek_Raise_R": {
+                        "Bones": {}
+                    },
+                    "Cheek_Puff_L": {
+                        "Bones": {}
+                    },
+                    "Cheek_Puff_R": {
+                        "Bones": {}
+                    },
+                    "Head_Turn_Up": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_Down": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Turn_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Tilt_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Tilt_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_L": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_R": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Forward": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Head_Backward": {
+                        "Bones": {
+                            "CC_Base_Head": {
+                                "Translate": [
+                                    3.3527612686157227e-07,
+                                    7.581710815429688e-05,
+                                    -6.5565118347876705e-06
+                                ],
+                                "Rotation": [
+                                    0.0,
+                                    -4.3655745685100555e-11,
+                                    2.3101165425032377e-10,
+                                    1.0
+                                ]
+                            }
+                        }
+                    },
+                    "Jaw_Open": {
+                        "Bones": {}
+                    },
+                    "Jaw_Forward": {
+                        "Bones": {}
+                    },
+                    "Jaw_L": {
+                        "Bones": {}
+                    },
+                    "Jaw_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Out": {
+                        "Bones": {}
+                    },
+                    "Tongue_Up": {
+                        "Bones": {}
+                    },
+                    "Tongue_Down": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_Up": {
+                        "Bones": {}
+                    },
+                    "Tongue_Tip_Down": {
+                        "Bones": {}
+                    },
+                    "Tongue_Narrow": {
+                        "Bones": {}
+                    },
+                    "Tongue_Wide": {
+                        "Bones": {}
+                    },
+                    "Tongue_Roll": {
+                        "Bones": {}
+                    },
+                    "Tongue_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_R": {
+                        "Bones": {}
+                    },
+                    "Tongue_Bulge_L": {
+                        "Bones": {}
+                    },
+                    "Tongue_Bulge_R": {
+                        "Bones": {}
+                    },
+                    "Eye_Blink_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Blink_R": {
+                        "Bones": {}
+                    },
+                    "Eye_Squint_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Squint_R": {
+                        "Bones": {}
+                    },
+                    "Eye_Wide_L": {
+                        "Bones": {}
+                    },
+                    "Eye_Wide_R": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_L": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_L": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_R": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_R": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_Up": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_Up": {
+                        "Bones": {}
+                    },
+                    "Eye_L_Look_Down": {
+                        "Bones": {}
+                    },
+                    "Eye_R_Look_Down": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Smile_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Frown_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Frown_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Stretch_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Stretch_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Dimple_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Dimple_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Press_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Press_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Pucker": {
+                        "Bones": {}
+                    },
+                    "Mouth_Funnel": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Upper": {
+                        "Bones": {}
+                    },
+                    "Mouth_Roll_In_Lower": {
+                        "Bones": {}
+                    },
+                    "Mouth_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Shrug_Upper": {
+                        "Bones": {}
+                    },
+                    "Mouth_Shrug_Lower": {
+                        "Bones": {}
+                    },
+                    "Mouth_Up_Upper_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Up_Upper_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Down_Lower_L": {
+                        "Bones": {}
+                    },
+                    "Mouth_Down_Lower_R": {
+                        "Bones": {}
+                    },
+                    "Mouth_Close": {
+                        "Bones": {}
+                    }
+                },
+                "Constraint": {},
+                "Meshes": {
+                    "CC_Game_Body": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "CC_Game_Tongue": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Tank_Top": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Biker_Vest": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "band": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Utility_Joggers": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "MaleB_S_T002": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Armor_Lower": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "Armor_Arms": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "CC_Base_Eye": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    },
+                    "CC_Base_Teeth": {
+                        "SubD Level": 0,
+                        "Materials": {
+                            "Kevin_actorBUILD_Pbr": {
+                                "Material Type": "Pbr",
+                                "MultiUV Index": 0,
+                                "Two Side": true,
+                                "Diffuse Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Ambient Color": [
+                                    255.0,
+                                    255.0,
+                                    255.0
+                                ],
+                                "Specular Color": [
+                                    51.0,
+                                    51.0,
+                                    51.0
+                                ],
+                                "Opacity": 1.0,
+                                "Self Illumination": 0.0,
+                                "Textures": {
+                                    "Metallic": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Base Color": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Roughness": {
+                                        "Texture Path": "",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Glow": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_Glow.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Opacity": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Diffuse.png",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "Normal": {
+                                        "Texture Path": "./Hero.fbm/Kevin_actorBUILD_Pbr_Normal.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    },
+                                    "AO": {
+                                        "Texture Path": "./textures/Hero/Hero/Armor_Lower/Kevin_actorBUILD_Pbr/Kevin_actorBUILD_Pbr_ao.jpg",
+                                        "Strength": 100.0,
+                                        "Offset": [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        "Tiling": [
+                                            1.0,
+                                            1.0
+                                        ]
+                                    }
+                                },
+                                "Resource Textures": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Avatar_Type": "NonStandard",
+        "Link_ID": "XI423IQOPQNUNYJBLOAB",
+        "Root Bones": [
+            {
+                "Name": "RL_BoneRoot",
+                "Original Name": "RL_BoneRoot",
+                "Object": "Kevin actorBUILD",
+                "Type": "AVATAR",
+                "Link_ID": "XI423IQOPQNUNYJBLOAB"
+            }
+        ],
+        "Object_Info": [
+            {
+                "Link_ID": "XI423IQOPQNUNYJBLOAB",
+                "Name": "Kevin actorBUILD",
+                "Type": "AVATAR",
+                "Root": "RL_BoneRoot",
+                "Bones": [
+                    "RL_BoneRoot",
+                    "CC_Base_Hip",
+                    "CC_Base_Pelvis",
+                    "CC_Base_L_Thigh",
+                    "CC_Base_L_Calf",
+                    "CC_Base_L_Foot",
+                    "CC_Base_L_ToeBaseShareBone",
+                    "CC_Base_L_ToeBase",
+                    "CC_Base_L_PinkyToe1",
+                    "CC_Base_L_RingToe1",
+                    "CC_Base_L_MidToe1",
+                    "CC_Base_L_IndexToe1",
+                    "CC_Base_L_BigToe1",
+                    "CC_Base_L_CalfTwist01",
+                    "CC_Base_L_CalfTwist02",
+                    "CC_Base_L_KneeShareBone",
+                    "CC_Base_L_ThighTwist01",
+                    "CC_Base_L_ThighTwist02",
+                    "CC_Base_R_Thigh",
+                    "CC_Base_R_Calf",
+                    "CC_Base_R_KneeShareBone",
+                    "CC_Base_R_Foot",
+                    "CC_Base_R_ToeBase",
+                    "CC_Base_R_BigToe1",
+                    "CC_Base_R_PinkyToe1",
+                    "CC_Base_R_RingToe1",
+                    "CC_Base_R_IndexToe1",
+                    "CC_Base_R_MidToe1",
+                    "CC_Base_R_ToeBaseShareBone",
+                    "CC_Base_R_CalfTwist01",
+                    "CC_Base_R_CalfTwist02",
+                    "CC_Base_R_ThighTwist01",
+                    "CC_Base_R_ThighTwist02",
+                    "CC_Base_Waist",
+                    "CC_Base_Spine01",
+                    "CC_Base_Spine02",
+                    "CC_Base_NeckTwist01",
+                    "CC_Base_NeckTwist02",
+                    "CC_Base_Head",
+                    "CC_Base_FacialBone",
+                    "CC_Base_JawRoot",
+                    "CC_Base_Tongue01",
+                    "CC_Base_Tongue02",
+                    "CC_Base_Tongue03",
+                    "CC_Base_Teeth02",
+                    "CC_Base_R_Eye",
+                    "CC_Base_L_Eye",
+                    "CC_Base_UpperJaw",
+                    "CC_Base_Teeth01",
+                    "CC_Base_L_Clavicle",
+                    "CC_Base_L_Upperarm",
+                    "CC_Base_L_Forearm",
+                    "CC_Base_L_ForearmTwist01",
+                    "CC_Base_L_ForearmTwist02",
+                    "CC_Base_L_ElbowShareBone",
+                    "CC_Base_L_Hand",
+                    "CC_Base_L_Pinky1",
+                    "CC_Base_L_Pinky2",
+                    "CC_Base_L_Pinky3",
+                    "CC_Base_L_Ring1",
+                    "CC_Base_L_Ring2",
+                    "CC_Base_L_Ring3",
+                    "CC_Base_L_Mid1",
+                    "CC_Base_L_Mid2",
+                    "CC_Base_L_Mid3",
+                    "CC_Base_L_Index1",
+                    "CC_Base_L_Index2",
+                    "CC_Base_L_Index3",
+                    "CC_Base_L_Thumb1",
+                    "CC_Base_L_Thumb2",
+                    "CC_Base_L_Thumb3",
+                    "CC_Base_L_UpperarmTwist01",
+                    "CC_Base_L_UpperarmTwist02",
+                    "CC_Base_L_RibsTwist",
+                    "CC_Base_L_Breast",
+                    "CC_Base_R_RibsTwist",
+                    "CC_Base_R_Breast",
+                    "CC_Base_R_Clavicle",
+                    "CC_Base_R_Upperarm",
+                    "CC_Base_R_Forearm",
+                    "CC_Base_R_ElbowShareBone",
+                    "CC_Base_R_ForearmTwist01",
+                    "CC_Base_R_ForearmTwist02",
+                    "CC_Base_R_Hand",
+                    "CC_Base_R_Ring1",
+                    "CC_Base_R_Ring2",
+                    "CC_Base_R_Ring3",
+                    "CC_Base_R_Mid1",
+                    "CC_Base_R_Mid2",
+                    "CC_Base_R_Mid3",
+                    "CC_Base_R_Thumb1",
+                    "CC_Base_R_Thumb2",
+                    "CC_Base_R_Thumb3",
+                    "CC_Base_R_Index1",
+                    "CC_Base_R_Index2",
+                    "CC_Base_R_Index3",
+                    "CC_Base_R_Pinky1",
+                    "CC_Base_R_Pinky2",
+                    "CC_Base_R_Pinky3",
+                    "CC_Base_R_UpperarmTwist01",
+                    "CC_Base_R_UpperarmTwist02",
+                    "RL_BoneRoot"
+                ]
+            }
+        ]
+    }
+}
