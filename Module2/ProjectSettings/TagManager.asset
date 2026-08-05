@@ -13,6 +13,7 @@ TagManager:
   - ArrowPocket
   - ArrowConstraint
   - 1stPersonCamera
+  - Enemy
   layers:
   - Default
   - TransparentFX
