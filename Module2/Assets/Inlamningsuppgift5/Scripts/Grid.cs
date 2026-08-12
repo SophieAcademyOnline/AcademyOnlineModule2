@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Timeline;
 using UnityEngine;
@@ -107,21 +108,18 @@ namespace Inlamningsuppgift5
             nodeArray = new Node[gridSizeX, gridSizeY];
             Vector3 bottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 -
                                  Vector3.forward * gridWorldSize.y / 2;
-
-            int numberOfTiles = gridSizeX * gridSizeY;
-            int tilesGrassDrawn = 0, tilesStoneDrawn = 0;
-
+            
             // Jord
             DrawDirt(gridSizeX, gridSizeY, bottomLeft);
 
             // Gräs
-            tilesGrassDrawn = DrawTilesRandom(gridSizeX, gridSizeY, bottomLeft, grassAmount, TileType.Grass);
+            DrawTilesRandom(gridSizeX, gridSizeY, bottomLeft, grassAmount, TileType.Grass);
 
             // Sten
-            tilesStoneDrawn = DrawTilesRandom(gridSizeX, gridSizeY, bottomLeft, stoneAmount, TileType.Stone);
+            DrawTilesRandom(gridSizeX, gridSizeY, bottomLeft, stoneAmount, TileType.Stone);
         }
 
-        public IEnumerable<Node> GetNeighbors(Node node)
+        public IEnumerable<Node> GetNeighbors(Node node, TileType tiletype = TileType.Grass)
         {
             int gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
             int gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
@@ -147,27 +145,57 @@ namespace Inlamningsuppgift5
             }
         }
 
+        public IEnumerable<Node> GetGrassNeighbors(Node node)
+        {
+            int gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
+            int gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
+            int[,] dirs =
+            {
+                { 1, 0 },
+                { -1, 0 },
+                { 0, 1 },
+                { 0, -1 }
+            };
+
+            for (int i = 0; i < dirs.GetLength(0); i++)
+            {
+                int nx = node.gridXPos + dirs[i, 0];
+                int ny = node.gridYPos + dirs[i, 1];
+
+                if (nx >= 0 && ny >= 0 && nx < gridSizeX && ny < gridSizeY)
+                {
+                    var n = nodeArray[nx, ny];
+                    if (n.tileObject.tileType == TileType.Grass)
+                        yield return n;
+                }
+            }
+        }
+
         private int DrawTilesRandom(int gridSizeX, int gridSizeY, Vector3 bottomLeft, int amount, TileType tileType)
         {
             int tilesCount = 0;
             int tilesDrawn = 0;
+            int skippedOVerTile = 0;
+
             while (tilesCount < amount)
             {
-                int x = Random.Range(0, gridSizeX);
-                int y = Random.Range(0, gridSizeY);
-
-                if (nodeArray[x, y] != null && (nodeArray[x, y].tileObject.tileType != TileType.Dirt))
+                int x, y, i = 0;
+                do
                 {
-                    tilesCount++;
-                    continue;
-                }
+                    x = Random.Range(0, gridSizeX);
+                    y = Random.Range(0, gridSizeY);
 
-                Vector3 worldPoint = bottomLeft + Vector3.right * (x * nodeDiameter + nodeDiameter / 2) +
-                                     Vector3.forward * (y * nodeDiameter + nodeDiameter / 2);
+                    if (nodeArray[x, y] != null && nodeArray[x, y].tileObject.tileType == TileType.Dirt)
+                    {
+                        break;
+                    }
 
-                Tile tile = Instantiate(tilePrefab, worldPoint, Quaternion.identity).GetComponent<Tile>();
-                tile.transform.parent = transform;
-                nodeArray[x, y] = new Node(worldPoint, tile, tileType, x, y);
+                    i++;
+                } while (true && i < Int16.MaxValue);
+
+                // Återanvänd gäss tilen
+                Node existingNode = nodeArray[x, y];
+                existingNode.tileObject.tileType = tileType;
                 tilesCount++;
                 tilesDrawn++;
             }

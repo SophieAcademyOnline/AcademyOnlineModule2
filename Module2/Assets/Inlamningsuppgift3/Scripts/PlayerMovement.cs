@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (Mathf.Sign(rb.velocity.y) > 0)
+            if (Mathf.Sign(rb.linearVelocity.y) > 0)
             {
                 // Enkelhopp ?
                 if (!isDoubleJumping)
@@ -117,26 +117,26 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
 
         // P� golvet och hoppar f�rsta g�ngen
         if (isOnFloor && jumpInput > 0)
         {
             isOnFloor = false;
-            rb.velocity = new Vector2(rb.velocity.x, jumpInput * jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
         }
 
         // Dubbel hopp ?
         if (!isOnFloor && jumpCounter == 2 && !isDoubleJumping)
         {
-            rb.velocity = new Vector2(rb.velocity.x, doubleJumpForce * jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, doubleJumpForce * jumpForce);
             isDoubleJumping = true;
         }
 
         // Hinder tr�ffat sperlaren ?
         if (obstacleHitPlayer)
         {
-            rb.velocity = new Vector2(-(horizontalInput * speed), rb.velocity.y);
+            rb.linearVelocity = new Vector2(-(horizontalInput * speed), rb.linearVelocity.y);
 
         }
     }
