@@ -175,7 +175,6 @@ namespace Inlamningsuppgift5
         {
             int tilesCount = 0;
             int tilesDrawn = 0;
-            int skippedOVerTile = 0;
 
             while (tilesCount < amount)
             {
